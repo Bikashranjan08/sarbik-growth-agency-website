@@ -40,7 +40,7 @@ const ProductCatalog = () => {
       material: 'Pro Series',
       price: 'Out of stock',
       description: 'Premium Shape with Uncompromised taste clarity.',
-      features: ['1L Capacity', 'BPA-free', 'Leak-proof'],
+      features: ['500ml', 'BPA-free', 'Leak-proof'],
       image: 'https://5.imimg.com/data5/SELLER/Default/2024/3/403855725/NI/AR/NA/6785846/customized-packaged-drinking-water-bottle-250x250.jpeg'
       ,tag: 'Luxury' 
     },
@@ -50,7 +50,7 @@ const ProductCatalog = () => {
       material: 'Pro Series',
       price: '₹159',
       description: 'Premium Shape with Uncompromised taste clarity.',
-      features: ['500ml', 'BPA-free', 'Leak-proof'],
+      features: ['1L Capacity', 'BPA-free', 'Leak-proof'],
       image: 'https://5.imimg.com/data5/IOS/Default/2025/10/554246508/JN/BF/IO/95089985/product-jpeg-500x500.jpeg',
       tag: 'Best Seller'
     },

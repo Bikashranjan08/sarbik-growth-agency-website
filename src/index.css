@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  /* Changed background to Pale Purple #F3E8FF */
+  @apply bg-[#F3E8FF] text-slate-900 antialiased overflow-x-hidden;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(147, 51, 234, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(216, 180, 254, 0.1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(147, 51, 234, 0.08) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(216, 180, 254, 0.1) 0px, transparent 50%);
+  background-attachment: fixed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glassmorphism Utilities - Adjusted for Pale Purple Background */
+.glass-panel {
+  @apply bg-white/60 backdrop-blur-lg border border-white/50 shadow-xl shadow-purple-900/10;
+}
+
+.glass-card {
+  /* Slightly increased opacity for better contrast on purple */
+  @apply bg-white/50 backdrop-blur-md border border-white/60 shadow-lg shadow-purple-900/5 hover:bg-white/70 transition-all duration-300;
+}
+
+.glass-button {
+  @apply bg-white/40 backdrop-blur-sm border border-white/70 shadow-sm hover:bg-white/60 transition-all duration-300 active:scale-95 hover:shadow-purple-200/50;
+}
+
+.glass-input {
+  @apply bg-white/40 backdrop-blur-sm border border-purple-200/60 focus:bg-white/60 focus:border-purple-500/50 transition-all duration-300 outline-none placeholder:text-slate-500;
+}
+
+.glass-nav {
+  @apply bg-white/70 backdrop-blur-xl border-b border-white/40 shadow-sm shadow-purple-900/5;
+}
+
+.text-gradient {
+  /* Updated gradient to match purple theme */
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-fuchsia-600;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-purple-300/50 rounded-full hover:bg-purple-400/50 backdrop-blur-sm;
+}
